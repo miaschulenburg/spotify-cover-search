@@ -51,7 +51,7 @@ export default {
 
         var fileLink = document.createElement('a');   
         fileLink.href = url;
-        fileLink.download = this.artistString + " - " + this.data.name + ".png";
+        fileLink.download = this.artistString + " - " + this.data.name;
         document.body.appendChild(fileLink);
         fileLink.click();
         document.body.removeChild(fileLink);
