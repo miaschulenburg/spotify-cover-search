@@ -28,7 +28,7 @@ export default {
   },
   methods: {
     searchQuery: function () {
-      axios.get(`https://spotify-cover-search.herokuapp.com/${this.query}`)
+      axios.get(`https://spotify-cover-search.onrender.com/${this.query}`)
       .then(res => {
         this.data = res.data.albums.items;
         if (this.data.length > 0)
