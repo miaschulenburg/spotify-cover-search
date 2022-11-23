@@ -35,7 +35,7 @@ export default {
       let string = this.data.artists[0].name;
       console.log(this.data.artists.length);
       for (var a = 1; a < this.data.artists.length; a++) {
-        console.log(a);
+        // console.log(a);
         string = string + ", " + this.data.artists[a].name
       }
 
