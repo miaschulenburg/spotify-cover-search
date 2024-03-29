@@ -1,8 +1,8 @@
 <template>
   <div id="app">
-    <div class="background-image" :style="{ backgroundImage: 'url(' + background + ')' }"></div>
+    <div class="background-image"></div>
     <div class="search-content">
-      <input v-model="query" @keyup.enter="searchQuery" spellcheck="false" placeholder="Search for an album..">
+      <input v-model="query" @keyup.enter="searchQuery" spellcheck="false" placeholder="Search for an album.">
       <div class="result-list" v-if="data.length > 0">
         <search-result v-for="item of data" :key=item.id :data="item"></search-result>
       </div>
